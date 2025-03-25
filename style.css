@@ -1,7 +1,33 @@
 /* Add styles here */
-.fotoPerfil {
-    max-width: 300px;
+:root {
+    --color-primario: #ffffff;
 }
-.fotoSofy {
-    max-width: 300px;
+:root {
+    --color-secundario: #000000;
+}
+:root {
+    --color-terciario: #fffaff;
+}
+:root{
+    --color-cuarto: #eb8718;
+}
+:root{
+    --color-quinto: #859733;
+}
+:root{
+    --color-sexto: #693817;
+}
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* tipografias */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+/* aplicacion de tipografias */
+h1.nombre{
+    font-family: "cormorant unicase", Regular 400 at 21px;
+    font-size: 150%;
+    font-style: normal;
+    color: var(--color-sexto);
 }
