@@ -26,8 +26,38 @@
 
 /* aplicacion de tipografias */
 h1.nombre{
-    font-family: "cormorant unicase", Regular 400 at 21px;
+    font-family: "Cormorant Unicase", Regular 400 at 21px;
     font-size: 150%;
     font-style: normal;
     color: var(--color-sexto);
+}
+p.ocupación{
+    font-family: "Darker Grotesque", Regular 400 at 21px;
+    font-size: 40%;
+    font-style: normal;
+    color: #000000;
+}
+h1.acercademi{
+    font-family: "Cormorant Unicase", Regular 400 at 21px;
+    font-size: 135%;
+    font-style: normal;
+    color:#859733;
+}
+h1.acercaDemi{
+    font-family: "Cormorant Unicase", Regular 400 al 21px;
+    font-size: 260%;
+    font-style: normal;
+    color:#693817;
+}
+p.contexto{
+    font-family: "Darker Grotesque", Regular 400 at 21px;
+    font-size: 30%;
+    font-style: normal;
+    color:#000000
+}
+p.Contexto{
+    font-family: "Darker Grotesque", Regular 400 at 21px;
+    font-size: 30%;
+    font-style: normal;
+    color:#000000
 }
