@@ -1,63 +1,105 @@
-/* Add styles here */
+/* Variables de colores */
 :root {
     --color-primario: #ffffff;
-}
-:root {
     --color-secundario: #000000;
-}
-:root {
     --color-terciario: #fffaff;
-}
-:root{
     --color-cuarto: #eb8718;
-}
-:root{
     --color-quinto: #859733;
-}
-:root{
     --color-sexto: #693817;
 }
+
+/* Importación de Bootstrap */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Importación de Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+/* Aplicación de Tipografías */
+.darker-grotesque {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cormorant-unicase {
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos de Encabezados y Párrafos */
+h1.nombre {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 150%;
+    color: var(--color-sexto);
+}
+
+p.ocupacion {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 16px;
+    color: var(--color-secundario);
+}
+
+h1.acerca-de-mi {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 260%;
+    color: var(--color-sexto);
+}
+
+p.contexto {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+
+p.Contexto {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1rem; 
+    color: var(--color-secundario);
+}
+
+h1 {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 180%;
+    color: var(--color-sexto);
+}
+
+h2 {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 55%;
+    color: var(--color-primario);
+}
+
+h3 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+h4 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+/* selecciona todos los parrafos y les asigna una tipografia especifica*/
+p {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 24px;
+    color: var(--color-secundario);
+}
+/* Ajustes de imagen */
+img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+  }
+  
+
+
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 /* tipografias */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
 
-/* aplicacion de tipografias */
-h1.nombre{
-    font-family: "Cormorant Unicase", Regular 400 at 21px;
-    font-size: 150%;
-    font-style: normal;
-    color: var(--color-sexto);
-}
-p.ocupación{
-    font-family: "Darker Grotesque", Regular 400 at 21px;
-    font-size: 40%;
-    font-style: normal;
-    color: #000000;
-}
-h1.acercademi{
-    font-family: "Cormorant Unicase", Regular 400 at 21px;
-    font-size: 135%;
-    font-style: normal;
-    color:#859733;
-}
-h1.acercaDemi{
-    font-family: "Cormorant Unicase", Regular 400 al 21px;
-    font-size: 260%;
-    font-style: normal;
-    color:#693817;
-}
-p.contexto{
-    font-family: "Darker Grotesque", Regular 400 at 21px;
-    font-size: 30%;
-    font-style: normal;
-    color:#000000
-}
-p.Contexto{
-    font-family: "Darker Grotesque", Regular 400 at 21px;
-    font-size: 30%;
-    font-style: normal;
-    color:#000000
-}
+
