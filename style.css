@@ -102,7 +102,7 @@ img {
 }
 
 /* Imágenes con tamaños específicos */
-img.tucan { width: 504px; height: 809px; }
+img.tucan { width: 809px; height: 504px; }
 img.interseccionformas { width: 537px; height: 492px; }
 img.laminaTriangulos1 { width: 527px; height: 436px; }
 img.laminaTriangulos2 { width: 403px; height: 632px; }
