@@ -85,7 +85,7 @@ h4 {
 /* selecciona todos los parrafos y les asigna una tipografia especifica*/
 p {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     color: var(--color-secundario);
 }
 /* Ajustes de imagen */
