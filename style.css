@@ -39,7 +39,7 @@ h1.nombre {
 p.ocupacion {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 16px;
-    color: var(--color-secundario);
+    color: var(--color-sexto);
 }
 
 h1.acerca-de-mi {
