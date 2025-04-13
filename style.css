@@ -216,7 +216,7 @@ body {
     }
   }
   
-/* sección About Me */
+/* Sección About Me */
 .about-me {
   min-height: 100vh;
   display: flex;
@@ -226,7 +226,6 @@ body {
   gap: 2rem;
   padding: 2rem;
   background-color: #fef7f9; /* igual al fondo general */
-  position: relative; /* necesario para posicionar la flecha */
 }
 
 .texto-about {
@@ -262,90 +261,5 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Flechita hacia la siguiente sección */
-.flecha-abajo {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  color: #6D3B1F;
-  cursor: pointer;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translate(-50%, 0);
-  }
-  40% {
-    transform: translate(-50%, -10px);
-  }
-  60% {
-    transform: translate(-50%, -5px);
-  }
-}
-
-.habilidades {
-  min-height: 100vh;
-  padding: 2rem;
-  background-color: #fff8f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor-habilidades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.bloque {
-  background-color: #f18824;
-  padding: 1.5rem;
-  border-radius: 10px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.iconos-software {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.titulosBlancos {
-  color: white;
-}
-
-ul.titulosBlancos {
-  list-style-type: disc;
-  text-align: left;
-  padding-left: 1.5rem;
-}
-
-.flecha-abajo {
-  margin-top: 3rem;
-  font-size: 2.5rem;
-  color: #6D3B1F;
-  text-decoration: none;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
 }
 
