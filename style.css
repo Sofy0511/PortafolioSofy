@@ -264,72 +264,63 @@ body {
 }
 
 /* seccion Mis Habilidades */
-/* sección Mis Habilidades */
 .habilidades {
   min-height: 100vh;
-  background-color: #fff;
   padding: 2rem;
-  text-align: center;
+  background-color: #fff8f3;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
 }
 
 .contenedor-habilidades {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-.bloque-habilidad {
-  background-color: #ec8126;
+.bloque {
+  background-color: #f18824;
   padding: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 10px;
   max-width: 300px;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.subtituloHabilidad {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid white;
-  padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 .iconos-software {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.icono {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-
-.texto-habilidad {
-  font-size: 1rem;
-  text-align: left;
-  line-height: 1.4;
+.titulosBlancos {
   color: white;
 }
 
-.lista-idiomas {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ul.titulosBlancos {
+  list-style-type: disc;
   text-align: left;
-  font-size: 1rem;
-  color: white;
+  padding-left: 1.5rem;
 }
 
-.lista-idiomas li {
-  margin-bottom: 0.5rem;
+.flecha-abajo {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: #6D3B1F;
+  text-decoration: none;
+  animation: bounce 1.5s infinite;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
