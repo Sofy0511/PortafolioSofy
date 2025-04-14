@@ -379,4 +379,79 @@ ul.titulosBlancos {
     transform: translateY(8px);
   }
 }
+
 /* seccion 1er Trimestre */
+
+.trimestre {
+  padding: 2rem;
+  background-color: #fdfaf8;
+  color: #4d2c1d;
+  position: relative;
+}
+
+.grid-trimestre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "img texto texto"
+    "persp silla formas";
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.img-ave {
+  grid-area: img;
+}
+
+.texto-bocetaje {
+  grid-area: texto;
+  background-color: #814f2f;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.perspectiva {
+  grid-area: persp;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cartelSilla {
+  grid-area: silla;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interseccionFormas {
+  grid-area: formas;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.footer-trimestre {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.titulosCafes {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #4d2c1d;
+}
+
+.flechaAbajo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.flechaAbajo img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.flechaAbajo:hover img {
+  transform: translateY(5px);
+}
