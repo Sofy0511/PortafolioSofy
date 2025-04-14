@@ -448,4 +448,76 @@ ul.titulosBlancos {
 }
 
 /* Sección 2do Trimestre */
+.segundoTrimestre {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fefdfc; /* color clarito */
+  position: relative; /* para la flecha */
+}
+
+/* Contenedor principal: 2 columnas */
+.contenedor-2do {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 1rem;
+}
+
+/* Columna Izquierda */
+.columna-izq {
+  padding: 1rem;
+}
+
+/* Mantiene tus clases existentes: 
+   .titulosVerdes, .titulosBlancos, etc. */
+.rompecabezas {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.laminas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.laminas {
+  width: 31%; 
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Columna Derecha (Franja verde + Texto vertical) */
+.columna-der {
+  background-color: #4B7B44; /* verde */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Texto vertical en blanco */
+.vertical-text {
+  writing-mode: vertical-rl; /* hace el texto vertical */
+  transform: rotate(180deg); /* corrige orientación */
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Flechita abajo (misma clase que usas en otras secciones) */
+.flechaAbajo {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto 0;
+  color: #4B7B44;
+  text-decoration: none;
+}
+
+/* Sección 3er Trimestre */
 
