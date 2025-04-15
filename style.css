@@ -267,7 +267,7 @@ body {
 .habilidades {
   min-height: 100vh;
   padding: 2rem;
-  background-color: #fef7f9;
+  background-color: #fffaff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,7 +329,7 @@ ul.titulosBlancos {
 .proyectos {
   min-height: 100vh;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #fffaff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,7 +384,7 @@ ul.titulosBlancos {
 /* seccion 1er Trimestre */
 
 .contenedor-1er-trimestre {
-  background-color: #fdfaf7;
+  background-color: #fffaff;
   padding: 60px 30px;
   display: flex;
   flex-direction: column;
@@ -456,7 +456,7 @@ ul.titulosBlancos {
   justify-content: center;
   justify-content: space-around;
   padding: 2rem;
-  background-color: #fefdfc; /* color clarito */
+  background-color: #fffaff; /* color clarito */
   position: relative; /* para la flecha */
 }
 
@@ -523,67 +523,12 @@ ul.titulosBlancos {
 
 /* Sección 3er Trimestre */
 .tercerTrimestre {
-  background-color: #fef7f9; /* Color de fondo */
+  background-color: #fffaff; /* Color de fondo */
   padding: 2rem;
-  text-align: center;
-}
-
-.tercerTrimestre h1 {
-  color: #eb8718; /* Color naranja */
-  font-size: 2.5rem; /* Ajusta el tamaño */
-  font-family: 'Cormorant Unicase', serif; /* Fuente serif */
-}
-
-.tercerTrimestre h2 {
-  color: #eb8718; /* Color naranja */
-  font-size: 1.5rem; /* Ajusta el tamaño */
-  font-family: 'Cormorant Unicase', serif; /* Fuente serif */
-}
-
-.tercerTrimestre h3 {
-  font-size: 1rem; /* Ajusta el tamaño */
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
-.tercerTrimestre h4 {
-  color: white; /* Color blanco */
-  font-size: 2rem; /* Ajusta el tamaño */
-  font-family: 'Cormorant Unicase', serif; /* Fuente serif */
-  margin-top: 2rem;
-}
-
-.tercerTrimestre p {
-  color: white; /* Color blanco */
-  font-size: 1rem; /* Ajusta el tamaño */
-  line-height: 1.5; /* Espaciado entre líneas */
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
-.FotosFantasea {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
 }
-
-.FotosFantasea img {
-  width: 300px; /* Ajusta el tamaño */
-  height: auto;
-}
-
-.flecha-abajo {
-  margin-top: 3rem;
-  font-size: 2.5rem;
-  color: #eb8718; /* Color naranja */
-  text-decoration: none;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(8px);
-  }
-}
+ 
