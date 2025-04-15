@@ -296,6 +296,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  
 }
 
 .titulosBlancos {
@@ -413,7 +414,6 @@ ul.titulosBlancos {
 .img1 {
   grid-column: 1 / 3;
   width: 100%;
-  border: 4px solid #5791ff;
 }
 
 .img2,
@@ -450,9 +450,11 @@ ul.titulosBlancos {
 /* Sección 2do Trimestre */
 .segundoTrimestre {
   min-height: 100vh;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: space-around;
   padding: 2rem;
   background-color: #fefdfc; /* color clarito */
   position: relative; /* para la flecha */
@@ -505,11 +507,11 @@ ul.titulosBlancos {
   writing-mode: vertical-rl; /* hace el texto vertical */
   transform: rotate(180deg); /* corrige orientación */
   font-size: 2.5rem;
-  text-align: center;
+  text-align: center ;
   line-height: 1;
 }
 
-/* Flechita abajo (misma clase que usas en otras secciones) */
+/* Flechita abajo */
 .flechaAbajo {
   display: block;
   text-align: center;
@@ -520,4 +522,68 @@ ul.titulosBlancos {
 }
 
 /* Sección 3er Trimestre */
+.tercerTrimestre {
+  background-color: #fef7f9; /* Color de fondo */
+  padding: 2rem;
+  text-align: center;
+}
 
+.tercerTrimestre h1 {
+  color: #eb8718; /* Color naranja */
+  font-size: 2.5rem; /* Ajusta el tamaño */
+  font-family: 'Cormorant Unicase', serif; /* Fuente serif */
+}
+
+.tercerTrimestre h2 {
+  color: #eb8718; /* Color naranja */
+  font-size: 1.5rem; /* Ajusta el tamaño */
+  font-family: 'Cormorant Unicase', serif; /* Fuente serif */
+}
+
+.tercerTrimestre h3 {
+  font-size: 1rem; /* Ajusta el tamaño */
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.tercerTrimestre h4 {
+  color: white; /* Color blanco */
+  font-size: 2rem; /* Ajusta el tamaño */
+  font-family: 'Cormorant Unicase', serif; /* Fuente serif */
+  margin-top: 2rem;
+}
+
+.tercerTrimestre p {
+  color: white; /* Color blanco */
+  font-size: 1rem; /* Ajusta el tamaño */
+  line-height: 1.5; /* Espaciado entre líneas */
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.FotosFantasea {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.FotosFantasea img {
+  width: 300px; /* Ajusta el tamaño */
+  height: auto;
+}
+
+.flecha-abajo {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: #eb8718; /* Color naranja */
+  text-decoration: none;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(8px);
+  }
+}
