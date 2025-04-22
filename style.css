@@ -477,6 +477,17 @@ ul.titulosBlancos {
 }
 
 /* Contenedor principal: 2 columnas */
+.segundoTrimestre {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fefdfc; /* color clarito */
+  position: relative; /* para la flecha */
+}
+
+/* Contenedor principal: 2 columnas */
 .contenedor-2do {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -523,11 +534,11 @@ ul.titulosBlancos {
   writing-mode: vertical-rl; /* hace el texto vertical */
   transform: rotate(180deg); /* corrige orientación */
   font-size: 2.5rem;
-  text-align: center ;
+  text-align: center;
   line-height: 1;
 }
 
-/* Flechita abajo */
+/* Flechita abajo (misma clase que usas en otras secciones) */
 .flechaAbajo {
   display: block;
   text-align: center;
@@ -539,27 +550,55 @@ ul.titulosBlancos {
 
 /* Sección 3er Trimestre */
 .tercerTrimestre {
-  background-color: #fffaff; /* Color de fondo */
   min-height: 100vh;
   padding: 2rem 1rem;
+  background-color: #fdfaf7;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;        /* alinea todo a la izquierda */
   gap: 2rem;
   position: relative;
 }
 
+/* Encabezado */
 .encabezado-trimestre {
-  text-align: center;
-  gap: 0.5rem;
+  width: 100%;
+  text-align: left;               /* texto pegado al margen */
+  margin-bottom: 2rem;
 }
 
+/* Ajustes de tipografía y tamaño */
+.encabezado-trimestre h1.titulosNaranjas {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.encabezado-trimestre h2.titulosNaranjas {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+
+.encabezado-trimestre h3 {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #555;
+  margin: 0;
+}
+
+/* Galería de imágenes alineada a la izquierda */
 .fotos-trimestre {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   width: 100%;
   max-width: 1200px;
+  justify-content: start;         /* alinea la grid al margen izquierdo */
+  justify-items: start;           /* alinea cada ítem al margen */
+  margin: 0;
 }
 
 .fotos-trimestre img {
@@ -570,15 +609,17 @@ ul.titulosBlancos {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Bloque naranja con texto */
+/* Bloque naranja con texto alineado a la izquierda */
 .bloque-texto {
+  width: 100%;
+  max-width: 1000px;
   background-color: #f18824;
   color: white;
   padding: 2rem;
-  max-width: 1000px;
-  width: 100%;
+  margin: 2rem 0;
   border-radius: 8px;
   box-sizing: border-box;
+  text-align: left;               /* contenido del bloque a la izquierda */
   line-height: 1.5;
 }
 
@@ -601,7 +642,6 @@ ul.titulosBlancos {
   margin-top: 1rem;
 }
 
-/* Reutiliza tu keyframes 'rebote' */
 @keyframes rebote {
   0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(8px); }
