@@ -263,7 +263,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* seccion Mis Habilidades */
+/* Sección Mis Habilidades */
 .habilidades {
   min-height: 100vh;
   padding: 2rem;
@@ -290,15 +290,29 @@ body {
   text-align: center;
 }
 
+/* Iconos de software */
 .iconos-software {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
-  
 }
 
+/* Hacer que cada ícono se estire y mantenga proporción */
+.iconos-software img {
+  flex: 1 1 -webkit-fill-available;
+  flex: 1 1 -moz-available;
+  flex: 1 1 fill-available;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Títulos y listas */
 .titulosBlancos {
   color: white;
 }
@@ -309,6 +323,7 @@ ul.titulosBlancos {
   padding-left: 1.5rem;
 }
 
+/* Flechita de navegación */
 .flecha-abajo {
   margin-top: 3rem;
   font-size: 2.5rem;
@@ -325,6 +340,7 @@ ul.titulosBlancos {
     transform: translateY(8px);
   }
 }
+
 /* seccion Mis proyectos */
 .proyectos {
   min-height: 100vh;
