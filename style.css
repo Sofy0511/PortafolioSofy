@@ -853,6 +853,236 @@ ul.titulosBlancos {
   50%      { transform: translateY(8px); }
 }
 
-/* Seccion 6to Trimestre */
+/* 6to Trimestre – Parte 1 */
+.seccion-sexto-trimestre {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Encabezado */
+.header-sexto-trimestre h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header-sexto-trimestre h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+
+.subtitulo-impartio {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Galería de 3 imágenes */
+.galeria-sexto1 {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.galeria-sexto1 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Bloque naranja */
+.bloque-sexto1 {
+  background-color: #eb8718;
+  padding: 2rem;
+  margin: 0 auto 2rem;
+  max-width: 1000px;
+  border-radius: 8px;
+}
+
+.bloque-sexto1 h4 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+.bloque-sexto1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Flecha animada */
+.flechaAbajo {
+  display: inline-block;
+  font-size: 2rem;
+  color: #693817;
+  text-decoration: none;
+  animation: rebote 1.5s infinite;
+  margin-top: 1rem;
+}
+
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
+/* Seccion 6to Trimestre - Parte 2 */
+.galeriaFotos {
+  background-color: #fdf8f6;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.galeriaFotos h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #d87218;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.subtituloGaleria {
+  color: #d87218;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profesGaleria {
+  color: #444;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.gridGaleria img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Flecha */
+.flechaAbajo {
+  font-size: 2rem;
+  margin-top: 3rem;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Seccion 7mo Trimestre - Parte 1 */
+.cartografiaCritica {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.encabezadoCartografia {
+  background-color: #8a9c4a;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.tituloCartografia {
+  font-size: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 1rem;
+}
+
+.encabezadoCartografia p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.imagenesCartografia {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.imagenesCartografia img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fraccionamientoUbicacion {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.maquetaYTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.maquetaYTexto img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.maquetaYTexto p {
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.trimestreTitulo {
+  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: #6b3e26;
+  margin-top: 2rem;
+}
+
+.labTitulo {
+  color: #4a7545;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+h4, h5 {
+  font-weight: normal;
+  margin: 0.2rem 0;
+}
+
+/* Flecha */
+.flechaAbajo {
+  font-size: 2rem;
+  margin-top: 2rem;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+/* Seccion 7mo Trimestre - Parte 2 */
 
  
