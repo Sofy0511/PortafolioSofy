@@ -570,7 +570,7 @@ ul.titulosBlancos {
 /* Ajustes de tipografía y tamaño */
 .encabezado-trimestre h1.titulosNaranjas {
   font-family: 'Cormorant Unicase', serif;
-  font-size: 3rem;
+  font-size: 8.75rem;
   margin: 0;
 }
 
@@ -624,7 +624,7 @@ ul.titulosBlancos {
 
 .bloque-texto .subtituloFantasea {
   margin: 0 0 1rem;
-  font-size: 2.5rem;
+  font-size: 8.75rem;
   line-height: 1.2;
 }
 
