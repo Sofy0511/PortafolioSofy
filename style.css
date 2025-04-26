@@ -1142,5 +1142,80 @@ h4, h5 {
   cursor: pointer;
 }
 /* Seccion 7mo Trimestre - Parte 2 */
+.conceptualizacion {
+  background-color: #fffaff;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Encabezado: imagen + bloque texto */
+.concept-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Imagen grande */
+.maquetaDomo {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Bloque verde con texto */
+.concept-text {
+  background-color: var(--color-quinto);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.concept-text h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+}
+
+.concept-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Galería de 3 imágenes */
+.concept-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1rem;
+}
+
+.concept-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Flechita animada */
+.flechaAbajo {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--color-sexto);
+  text-decoration: none;
+  animation: rebote 1.5s infinite;
+}
+
+@keyframes rebote {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%     { transform: translateX(-50%) translateY(8px); }
+}
 
  
