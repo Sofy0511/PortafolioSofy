@@ -342,6 +342,7 @@ ul.titulosBlancos {
 }
 
 /* seccion Mis proyectos */
+/* Sección Mis proyectos */
 .proyectos {
   min-height: 100vh;
   padding: 2rem;
@@ -380,6 +381,12 @@ ul.titulosBlancos {
   transform: scale(1.03);
 }
 
+/* Alineación a la izquierda para empaque y cubo */
+.empaqueFisico,
+.cuboFinal {
+  justify-self: start;
+}
+
 .flecha-abajo {
   margin-top: 3rem;
   font-size: 2.5rem;
@@ -396,6 +403,7 @@ ul.titulosBlancos {
     transform: translateY(8px);
   }
 }
+
 
 /* seccion 1er Trimestre */
 
