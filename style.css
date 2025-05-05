@@ -195,13 +195,18 @@ body {
   }
   
   /* Flechita de navegación */
-  .flechaAbajo {
+  #portada .flechaAbajo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2rem;
     text-decoration: none;
-    color: #6D3B1F;
-    margin-top: 2rem;
-    animation: rebote 2s infinite;
+    color: #000; /* O el color que estés usando */
+    animation: bounce 2s infinite;
+    z-index: 10;
   }
+  
   
   /* Animación de rebote */
   @keyframes rebote {
@@ -387,7 +392,7 @@ ul.titulosBlancos {
   justify-self: start;
 }
 
-.flecha-abajo {
+.flechaAbajo {
   margin-top: 3rem;
   font-size: 2.5rem;
   color: #4B7B44;
@@ -554,7 +559,7 @@ ul.titulosBlancos {
   line-height: 1;
 }
 
-/* Flechita abajo (misma clase que usas en otras secciones) */
+/* Flechita abajo */
 .flechaAbajo {
   display: block;
   text-align: center;
