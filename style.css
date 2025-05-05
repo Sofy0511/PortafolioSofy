@@ -681,23 +681,25 @@ ul.titulosBlancos {
   flex-direction: column;
   gap: 2rem;
   position: relative;
-}
-
-/* Top: imagenes columna izquierda + texto derecha */
-.top-cuarto {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
 
+/* Top: imágenes y texto */
+.top-cuarto {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* Columna imágenes: una debajo de otra */
 .columna-imagenes {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.columna-imagenes img {
+.mecanismoAutomata,
+.automataSuperior {
   width: 782px;
   height: 418px;
   object-fit: cover;
@@ -705,33 +707,37 @@ ul.titulosBlancos {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Bloque de texto alineado a la altura de la primera imagen */
 .texto-autómata {
-  flex: 1;
   background-color: #693817;
   padding: 1.5rem;
   border-radius: 8px;
-  max-width: 800px;
+  flex: 1;
+  box-sizing: border-box;
   align-self: flex-start;
-}
-
-.texto-autómata .titulosBlancos {
-  margin: 0 0 1rem;
-  font-size: 1.2rem;
 }
 
 .automata-titulo {
   font-size: 120px;
+  color: white;
+  margin: 0 0 1rem;
 }
 
-/* Imágenes debajo del bloque de texto */
+.texto-autómata p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+/* Imágenes secundarias debajo del bloque de texto */
 .imagenes-secundarias {
   display: flex;
   gap: 1rem;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
-.imagenes-secundarias img {
+.cascaronBallena,
+.automataLateral {
   width: 365px;
   height: 532px;
   object-fit: cover;
@@ -739,20 +745,19 @@ ul.titulosBlancos {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Footer */
+/* Footer con título y detalle */
 .footer-cuarto {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .trimestre-titulo {
   font-size: 130px;
-}
-
-.footer-cuarto .titulosCafes {
   margin: 0;
+  color: #4d2c1d;
 }
 
 .info-footer h3,
@@ -761,7 +766,7 @@ ul.titulosBlancos {
   color: #4d2c1d;
 }
 
-/* Flechita animada */
+/* Flechas animadas */
 .flechaAbajo {
   font-size: 2rem;
   color: #4d2c1d;
@@ -783,76 +788,88 @@ ul.titulosBlancos {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   position: relative;
+  align-items: flex-start;
 }
 
-/* Fila superior */
-.top-quinto {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-}
-
-.imagen-principal {
-  flex: 1 1 45%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.texto-top-quinto {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-/* Fila secundaria */
-.secundario-quinto {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.imagenes-secundarias {
-  flex: 1 1 45%;
-  display: flex;
-  gap: 1rem;
-}
-
-.imagenes-secundarias img {
-  flex: 1 1 calc(50% - 1rem);
-  width: 100%;
+/* Imagen escantillones */
+.escantillones {
+  width: 640px;
+  height: 480px;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Bloque verde */
+/* Títulos */
+.titulos-quinto {
+  max-width: 640px;
+}
+
+.titulos-quinto h1 {
+  font-size: 140px;
+  margin: 0;
+}
+
+.titulos-quinto h2 {
+  font-size: 25px;
+  margin: 0.5rem 0;
+}
+
+.titulos-quinto h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Imágenes de lámpara */
+.imagenes-lampara {
+  display: flex;
+  gap: 1rem;
+}
+
+.lamparaSecundaria,
+.lamparaEncendida {
+  width: 240px;
+  height: 414px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Texto bloque */
 .bloque-lampara {
-  flex: 1 1 45%;
-  background-color: var(--color-quinto); /* tu verde de variables */
+  width: 999px;
+  height: 414px;
+  background-color: var(--color-quinto);
   padding: 1.5rem;
   border-radius: 8px;
   box-sizing: border-box;
 }
 
-.bloque-lampara .titulosBlancos {
+.bloque-lampara h4 {
+  font-size: 110px;
   margin: 0 0 1rem;
 }
 
-/* Flecha animada */
+.bloque-lampara p {
+  font-size: 25px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Flecha */
 .flechaAbajo {
   font-size: 2rem;
-  color: var(--color-sexto); /* marrón oscuro */
+  color: var(--color-sexto);
   text-decoration: none;
-  text-align: center;
   animation: rebote 1.5s infinite;
   margin-top: 2rem;
+}
+
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
 }
 
 /* 5to Trimestre Segunda Sección */
@@ -896,7 +913,7 @@ ul.titulosBlancos {
 /* Texto normal */
 .texto-normal {
   font-family: 'Darker Grotesque', sans-serif;
-  font-size: 1rem;
+  font-size: 25px;
   color: #333;
   line-height: 1.5;
   margin: 0.5rem 0;
@@ -931,7 +948,7 @@ ul.titulosBlancos {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 140px;
   text-align: center;
   margin: 0;
 }
@@ -1031,51 +1048,66 @@ ul.titulosBlancos {
   50%      { transform: translateY(8px); }
 }
 
-/* Seccion 6to Trimestre - Parte 2 */
+/* Sección 6to Trimestre - Parte 2 */
 .galeriaFotos {
   background-color: #fdf8f6;
   padding: 4rem 2rem;
   text-align: center;
 }
 
+/* Encabezados */
 .galeriaFotos h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #d87218;
   font-family: 'Cormorant Garamond', serif;
 }
-
 .subtituloGaleria {
   color: #d87218;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-family: 'Montserrat', sans-serif;
 }
-
 .profesGaleria {
   color: #444;
   font-size: 1rem;
-  font-weight: normal;
   margin-bottom: 2rem;
 }
 
-.gridGaleria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  justify-items: center;
-  align-items: center;
+/* Imagen principal */
+.galeria-principal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-
-.gridGaleria img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
+.macetaEmpaque {
+  width: 635px;
+  height: 781px;
   object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Flecha */
+/* Galería secundaria: 2 filas de 3 columnas */
+.gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  justify-items: center;
+  align-items: start;
+  max-width: 3 * 375px + 2 * 1.2rem; /* = 1125px + gaps */
+  margin: 0 auto;
+}
+
+.gridGaleria img.sec {
+  width: 375px;
+  height: 338px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Flechita animada */
 .flechaAbajo {
   font-size: 2rem;
   margin-top: 3rem;
@@ -1085,104 +1117,134 @@ ul.titulosBlancos {
 
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+  50%      { transform: translateY(8px); }
 }
 
-/* Seccion 7mo Trimestre - Parte 1 */
+
+/* Sección 7mo Trimestre - Parte 1 */
 .cartografiaCritica {
   background-color: #f9f9f9;
   padding: 4rem 2rem;
-  color: #333;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* Todo alineado a la izquierda */
+  gap: 2rem;
+  position: relative;
 }
 
-.encabezadoCartografia {
+/* Bloque de texto */
+.bloque-ct {
+  width: 1098px;
+  height: 446px;
   background-color: #8a9c4a;
-  color: white;
   padding: 2rem;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 .tituloCartografia {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Cormorant Garamond', serif;
-  margin-bottom: 1rem;
+  color: white;
+  margin: 0 0 1rem;
 }
 
-.encabezadoCartografia p {
+.texto-ct {
   font-size: 1.1rem;
+  color: white;
   line-height: 1.6;
+  margin: 0;
 }
 
-.imagenesCartografia {
+/* Galería de mapas */
+.grid-map {
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
-  margin: 2rem 0;
+  margin-top: 1rem;
 }
 
-.imagenesCartografia img {
-  max-width: 400px;
-  width: 100%;
+.grid-map img {
+  width: 525px;
+  height: 284px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
+/* Párrafo de ubicación */
 .fraccionamientoUbicacion {
   font-size: 0.95rem;
-  margin-bottom: 2rem;
   color: #555;
+  margin-top: 0.5rem;
 }
 
-.maquetaYTexto {
+/* Maqueta final alineada a la derecha */
+.maqueta-ct {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 
-.maquetaYTexto img {
-  max-width: 500px;
-  width: 100%;
+.maquetaFinal {
+  width: 626px;
+  height: 705px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-.maquetaYTexto p {
-  max-width: 800px;
+.texto-maqueta {
+  max-width: 626px;
   font-size: 1rem;
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Footer alineado a la izquierda */
+.footer7 {
+  width: 1098px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .trimestreTitulo {
-  font-size: 2rem;
-  font-family: 'Cormorant Garamond', serif;
+  font-size: 140px;
+  margin: 0;
   color: #6b3e26;
-  margin-top: 2rem;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .labTitulo {
-  color: #4a7545;
-  font-weight: normal;
   font-size: 1.1rem;
+  color: #4a7545;
+  margin: 0;
 }
 
-h4, h5 {
-  font-weight: normal;
-  margin: 0.2rem 0;
+.footer7 h4,
+.footer7 h5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
 }
 
-/* Flecha */
+/* Flechita animada */
 .flechaAbajo {
   font-size: 2rem;
-  margin-top: 2rem;
+  color: #6b3e26;
+  text-decoration: none;
   animation: bounce 1.5s infinite;
-  cursor: pointer;
+  margin-top: 2rem;
+  align-self: center;
 }
-/* Seccion 7mo Trimestre - Parte 2 */
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Sección 7mo Trimestre – Parte 2 */
 .conceptualizacion {
   background-color: #fffaff;
   padding: 3rem 2rem;
@@ -1190,26 +1252,50 @@ h4, h5 {
   flex-direction: column;
   gap: 2rem;
   position: relative;
+  align-items: flex-start;
 }
 
-/* Encabezado: imagen + bloque texto */
+/* Encabezado: dos columnas */
 .concept-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 1.5rem;
-  align-items: start;
+  width: 100%;
+  max-width: calc(779px + 978px + 1.5rem);
 }
 
-/* Imagen grande */
+/* Columna Izquierda */
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .maquetaDomo {
-  width: 100%;
-  border-radius: 8px;
+  width: 779px;
+  height: 518px;
   object-fit: cover;
+  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Bloque verde con texto */
+.patrones {
+  width: 779px;
+  height: 462px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Columna Derecha */
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .concept-text {
+  width: 978px;
+  height: 518px;
   background-color: var(--color-quinto);
   padding: 1.5rem;
   border-radius: 8px;
@@ -1218,36 +1304,45 @@ h4, h5 {
 }
 
 .concept-text h1 {
+  font-size: 110px;
+  color: white;
   margin: 0 0 1rem;
-  font-size: 2.5rem;
 }
 
 .concept-text p {
-  margin: 0;
+  font-size: 30px;
+  color: white;
   line-height: 1.5;
+  margin: 0;
 }
 
-/* Galería de 3 imágenes */
-.concept-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+/* Subgalería bajo el texto */
+.subgallery {
+  display: flex;
   gap: 1rem;
 }
 
-.concept-gallery img {
-  width: 100%;
-  height: auto;
+.reticula {
+  width: 565px;
+  height: 338px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Flechita animada */
+.pictogramasCompletos {
+  width: 379px;
+  height: 338px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Flechita hacia portada */
 .flechaAbajo {
   position: absolute;
   bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 2rem; /* alineada a la izquierda */
   font-size: 2rem;
   color: var(--color-sexto);
   text-decoration: none;
@@ -1255,8 +1350,9 @@ h4, h5 {
 }
 
 @keyframes rebote {
-  0%,100% { transform: translateX(-50%) translateY(0); }
-  50%     { transform: translateX(-50%) translateY(8px); }
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(8px); }
 }
+
 
  
