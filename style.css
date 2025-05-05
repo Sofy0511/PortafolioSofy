@@ -415,7 +415,7 @@ ul.titulosBlancos {
 }
 
 .titulo-trimestre {
-  font-size: 8.125rem; /* 130px */
+  font-size: 8.125rem;
   color: #4B7B44;
   margin-bottom: 0.5rem;
   text-align: left;
@@ -424,7 +424,7 @@ ul.titulosBlancos {
 }
 
 .subtitulo-trimestre {
-  font-size: 2.25rem; /* 36px */
+  font-size: 2.25rem;
   color: #4B7B44;
   text-align: left;
   width: 100%;
@@ -444,15 +444,14 @@ ul.titulosBlancos {
 .bloque-texto {
   background-color: #f18824;
   border-radius: 10px;
-  width: 53.94rem; /* 863px */
-  height: 21.125rem; /* 338px */
+  width: 100%;
   padding: 1.5rem;
   color: white;
   box-sizing: border-box;
 }
 
 .titulo-bloque {
-  font-size: 7.5rem; /* 120px */
+  font-size: 7.5rem;
   margin-bottom: 1rem;
 }
 
@@ -461,30 +460,24 @@ ul.titulosBlancos {
   line-height: 1.5;
 }
 
-.imagenes-superiores {
-  display: flex;
-  gap: 2rem;
-}
-
-.img-tucan,
-.img-perspectiva {
-  width: 26.56rem; /* 425px */
-  height: 45.81rem; /* 733px */
-  object-fit: cover;
-  border-radius: 8px;
-}
-
+.imagenes-superiores,
 .imagenes-inferiores {
   display: flex;
   gap: 2rem;
+  width: 100%;
+  justify-content: center;
 }
 
+.img-superior,
 .img-inferior {
-  width: 53.94rem; /* 863px */
-  height: auto;
+  width: 100%;
+  max-width: 425px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 
 /* Sección 2do Trimestre */
 .segundoTrimestre {
