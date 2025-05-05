@@ -1347,17 +1347,6 @@ ul.titulosBlancos {
   50%     { transform: translateY(8px); }
 }
 
-.flechaAbajo {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  text-decoration: none;
-  color: #6D3B1F;
-  animation: rebote 2s infinite;
-  z-index: 10;
-}
 
 /* RESPONSIVE QUICK-SET */
 @media (max-width: 599px) {
