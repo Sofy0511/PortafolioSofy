@@ -1354,5 +1354,51 @@ ul.titulosBlancos {
   50%     { transform: translateY(8px); }
 }
 
+/* RESPONSIVE QUICK-SET */
+@media (max-width: 599px) {
+  /* mueve todo a columna, full-width, centra textos */
+  .proyectos .galeria-proyectos,
+  .galeriaFotos .gridGaleria,
+  .quintoTrimestre .imagenes-lampara,
+  .segundaSeccion .contenedor-quinta-sec2,
+  .cartografiaCritica .imagenesCartografia,
+  .concept-header,
+  .top-cuarto,
+  .secundario-quinto {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .text-align-left {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .galeria-proyectos,
+  .gridGaleria,
+  .galeriaFotos .gridGaleria,
+  .concept-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .top-cuarto,
+  .secundario-quinto,
+  .contenedor-quinta-sec2 {
+    flex-wrap: wrap;
+  }
+  .columna-imagenes,
+  .left-col,
+  .imagenes-lampara {
+    flex: 1 1 45% !important;
+  }
+}
+
+/* >=900px: nada: tu diseño de desktop por defecto */
+
 
  
